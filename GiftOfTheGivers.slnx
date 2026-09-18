@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="../GiftOfTheGivers.Functions/GiftOfTheGivers.Functions.csproj" Id="baea3a2d-f642-453d-b5a1-9cae7ee10f01" />
+  <Project Path="GiftOfTheGivers.csproj" />
+</Solution>

@@ -1,0 +1,66 @@
+html {
+    font-size: 16px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.card {
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,.1);
+}
+
+.btn-primary {
+    border-radius: 8px;
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+    background: #f4f7fb;
+    font-family: 'Segoe UI',sans-serif;
+}
+
+.form-floating > .form-control-plaintext::placeholder, .form-floating > .form-control::placeholder {
+  color: var(--bs-secondary-color);
+  text-align: end;
+}
+
+.form-floating > .form-control-plaintext:focus::placeholder, .form-floating > .form-control:focus::placeholder {
+  text-align: start;
+}
+
+.navbar {
+    background-color: #005baa !important;
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+.navbar-brand,
+.nav-link {
+    color: white !important;
+    font-weight: 600;
+}
+
+    .nav-link:hover {
+        color: #ffd54f !important;
+    }
+
+footer {
+    background-color: #005baa;
+    color: white;
+    padding: 15px;
+}

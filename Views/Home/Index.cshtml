@@ -1,0 +1,45 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="container">
+
+    <div class="p-5 mb-4 bg-light rounded-3">
+
+        <div class="container-fluid py-5">
+
+            <h1 class="display-4">
+
+                Gift of the Givers
+
+            </h1>
+
+            <p class="lead">
+
+                Providing humanitarian aid
+                during disasters across
+                South Africa and beyond.
+
+            </p>
+
+            <a asp-controller="Donation"
+               asp-action="Index"
+               class="btn btn-primary btn-lg">
+
+                Donate Now
+
+            </a>
+
+            <a asp-controller="Volunteer"
+               asp-action="Index"
+               class="btn btn-success btn-lg">
+
+                Become a Volunteer
+
+            </a>
+
+        </div>
+
+    </div>
+
+</div>

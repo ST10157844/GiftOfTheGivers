@@ -1,0 +1,58 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@model GiftOfTheGivers.Models.Donation
+
+<h2>Tax Certificate</h2>
+
+<hr />
+
+<div class="card p-4">
+
+    <h4>Gift of the Givers Foundation</h4>
+
+    <p>
+
+        Thank you
+
+        <strong>@Model.DonorName</strong>
+
+    </p>
+
+    <p>
+
+        Donation:
+
+        @Model.Amount
+
+        @Model.Currency
+
+    </p>
+
+    <p>
+
+        Donation Type:
+
+        @Model.DonationType
+
+    </p>
+
+    <p>
+
+        Date:
+
+        @Model.DonationDate
+
+    </p>
+
+    <hr />
+
+    <h5>
+
+        Placeholder Tax Certificate
+
+    </h5>
+
+</div>

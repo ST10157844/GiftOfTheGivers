@@ -1,0 +1,54 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewData["Title"] = "Employee Dashboard";
+}
+
+<h2>Employee Dashboard</h2>
+
+<hr />
+
+<div class="row">
+
+    <div class="col-md-6">
+
+        <div class="card p-3 shadow">
+
+            <h4>Relief Updates</h4>
+
+            <p>Post updates about ongoing disaster relief projects.</p>
+
+            <a asp-controller="Employee"
+               asp-action="ReliefUpdates"
+               class="btn btn-primary">
+
+                Manage Updates
+
+            </a>
+
+        </div>
+
+    </div>
+
+    <div class="col-md-6">
+
+        <div class="card p-3 shadow">
+
+            <h4>Volunteer Registrations</h4>
+
+            <p>View volunteers interested in helping.</p>
+
+            <a asp-controller="Employee"
+               asp-action="Volunteers"
+               class="btn btn-success">
+
+                View Volunteers
+
+            </a>
+
+        </div>
+
+    </div>
+
+</div>

@@ -1,0 +1,78 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@* @{
+    ViewData["Title"] = "Donate";
+}
+
+<div class="container mt-5">
+
+    <h1 class="display-4 text-primary">
+        Support Disaster Relief
+    </h1>
+
+    <hr />
+
+    <p class="lead">
+        Every donation helps provide food, water,
+        shelter and medical assistance to communities
+        affected by disasters.
+    </p>
+
+    <a class="btn btn-primary btn-lg">
+        Donate Now
+    </a>
+
+</div> *@
+@model GiftOfTheGivers.Models.Donation
+
+<h2>Make a Donation</h2>
+
+<form asp-action="Index" method="post">
+
+    <div class="mb-3">
+        <label>Your Name</label>
+        <input asp-for="DonorName" class="form-control" />
+    </div>
+
+    <div class="mb-3">
+        <label>Amount</label>
+        <input asp-for="Amount" class="form-control" />
+    </div>
+
+    <div class="mb-3">
+        <label>Currency</label>
+
+        <select asp-for="Currency" class="form-select">
+
+            <option>ZAR</option>
+
+            <option>USD</option>
+
+            <option>EUR</option>
+
+        </select>
+
+    </div>
+
+    <div class="mb-3">
+
+        <label>Donation Type</label>
+
+        <select asp-for="DonationType" class="form-select">
+
+            <option>One-Time</option>
+
+            <option>Recurring</option>
+
+        </select>
+
+    </div>
+
+    <button class="btn btn-primary">
+
+        Donate
+
+    </button>
+
+</form>
