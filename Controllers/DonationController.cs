@@ -2,6 +2,7 @@
 using GiftOfTheGivers.Data;
 using GiftOfTheGivers.Models;
 using Microsoft.AspNetCore.Mvc;
+using GiftOfTheGivers.Helpers;
 
 namespace GiftOfTheGivers.Controllers
 {
@@ -87,9 +88,16 @@ namespace GiftOfTheGivers.Controllers
 
                     return View(donation);
                 }
+                certificate.FormattedAmount =
+    DonationFormatter.FormatAmount(
+        certificate.Amount,
+        certificate.Currency);
+
 
                 return View("TaxCertificate", certificate);
             }
+
+
             catch (HttpRequestException)
             {
                 ModelState.AddModelError(

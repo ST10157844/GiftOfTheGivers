@@ -5,10 +5,10 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <UserSecretsId>aspnet-GiftOfTheGivers-fd55f8ef-056c-4a57-a72f-3bbb99cc21df</UserSecretsId>
-    <DefaultItemExcludes>$(DefaultItemExcludes);GiftOfTheGivers.Functions\**;GiftOfTheGivers.Tests\**</DefaultItemExcludes>
-  </PropertyGroup>
+	  <DefaultItemExcludes>$(DefaultItemExcludes);GiftOfTheGivers.Functions\**;GiftOfTheGivers.Tests\**;GiftOfTheGivers.Helpers\**</DefaultItemExcludes>  </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="GiftOfTheGivers.Helpers" Version="1.0.0" />
     <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="10.0.10" />
     <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="10.0.10" />
     <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="10.0.10" />

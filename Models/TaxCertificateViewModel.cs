@@ -13,5 +13,6 @@
         public string DonationType { get; set; } = string.Empty;
 
         public DateTime IssuedDate { get; set; }
+        public string FormattedAmount { get; set; } = string.Empty;
     }
 }
