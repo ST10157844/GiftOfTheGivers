@@ -1,5 +1,5 @@
 <Solution>
-  <Project Path="../GiftOfTheGivers.Functions/GiftOfTheGivers.Functions.csproj" Id="baea3a2d-f642-453d-b5a1-9cae7ee10f01" />
-  <Project Path="../GiftOfTheGivers.Tests/GiftOfTheGivers.Tests.csproj" Id="e9db74e3-9089-44b4-96cb-a1b137d65c51" />
   <Project Path="GiftOfTheGivers.csproj" />
+  <Project Path="GiftOfTheGivers.Functions/GiftOfTheGivers.Functions.csproj" />
+  <Project Path="GiftOfTheGivers.Tests/GiftOfTheGivers.Tests.csproj" />
 </Solution>
