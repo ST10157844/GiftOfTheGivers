@@ -5,7 +5,7 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <UserSecretsId>aspnet-GiftOfTheGivers-fd55f8ef-056c-4a57-a72f-3bbb99cc21df</UserSecretsId>
-	  <DefaultItemExcludes>$(DefaultItemExcludes);GiftOfTheGivers.Functions\**;GiftOfTheGivers.Tests\**;GiftOfTheGivers.Helpers\**</DefaultItemExcludes>  </PropertyGroup>
+	  <DefaultItemExcludes>$(DefaultItemExcludes);GiftOfTheGivers.Functions\**;GiftOfTheGivers.Tests\**;GiftOfTheGivers.Helpers\**;GiftOfTheGivers.IntegrationTests\**</DefaultItemExcludes> </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="GiftOfTheGivers.Helpers" Version="1.0.0" />
@@ -15,6 +15,7 @@
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="10.0.10" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="10.0.10" PrivateAssets="all" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="10.0.10" />
+    <PackageReference Include="System.Security.Cryptography.Pkcs" Version="9.0.21" />
   </ItemGroup>
 
   <ItemGroup>
