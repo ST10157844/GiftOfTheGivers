@@ -76,6 +76,11 @@ namespace GiftOfTheGivers.Controllers
                     return View(donation);
                 }
 
+                if (donation.IsAnonymous)
+                {
+                    donation.DonorName = "Anonymous";
+                }
+
                 var certificate =
                     await response.Content
                         .ReadFromJsonAsync<TaxCertificateViewModel>();
@@ -89,9 +94,9 @@ namespace GiftOfTheGivers.Controllers
                     return View(donation);
                 }
                 certificate.FormattedAmount =
-    DonationFormatter.FormatAmount(
-        certificate.Amount,
-        certificate.Currency);
+                DonationFormatter.FormatAmount(
+                    certificate.Amount,
+                    certificate.Currency);
 
 
                 return View("TaxCertificate", certificate);

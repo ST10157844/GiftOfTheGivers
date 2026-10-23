@@ -30,3 +30,18 @@ steps:
   inputs:
     testResultsFormat: 'VSTest'
     testResultsFiles: '**/*.trx'
+
+
+- task: DotNetCoreCLI@2
+  displayName: 'Run tests with coverage'
+  inputs:
+    command: 'test'
+    projects: '**/*Tests/*.csproj'
+    arguments: '--configuration $(buildConfiguration) --collect:"XPlat Code Coverage"'
+    publishTestResults: true
+
+    - task: PublishCodeCoverageResults@2
+  displayName: 'Publish code coverage report'
+  inputs:
+    summaryFileLocation: '$(Agent.TempDirectory)/**/coverage.cobertura.xml'
+    failIfCoverageEmpty: true
